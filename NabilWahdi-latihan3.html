@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan 3</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table{
+            margin: auto;
+        }
+        .section{
+            margin-top: 40px;
+        }
+        .berita{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 align="center">Latihan 3 - HTML</h1>
+
+    <!-- ================= FOTO 1 DENGAN TABLE LAYOUT ================= -->
+    <div class="section">
+        <h2>1. Menyisipkan Gambar dengan Table Layout</h2>
+        <table border="1" cellpadding="10">
+            <tr>
+                <td align="center">
+                    <img src="Downloads/123.jpg" width="300" alt="Foto 1">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Foto menggunakan layout tabel</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ================= IMAGE MAP ================= -->
+    <div class="section">
+        <h2>2. Image Map</h2>
+        <p>Klik area tertentu pada gambar:</p>
+
+        <img src="foto/foto2.jpg" usemap="#petamap" width="400" alt="Foto 2">
+
+        <map name="petamap">
+            <!-- Rect ke PNJ -->
+            <area shape="rect" coords="50,50,200,150"
+                  href="https://pnj.ac.id"
+                  target="_blank"
+                  alt="PNJ">
+
+            <!-- Circle ke W3Schools -->
+            <area shape="circle" coords="300,200,60"
+                  href="https://www.w3schools.com"
+                  target="_blank"
+                  alt="W3Schools">
+        </map>
+    </div>
+
+    <!-- ================= HYPERLINK TARGET ================= -->
+    <div class="section">
+        <h2>3. Hyperlink dengan Target</h2>
+        <ul>
+            <li><a href="https://www.wikipedia.org" target="_blank">Buka di Tab Baru (_blank)</a></li>
+            <li><a href="https://www.detik.com" target="_self">Buka di Halaman Ini (_self)</a></li>
+            <li><a href="https://www.kompas.com" target="_parent">Buka di Parent Frame (_parent)</a></li>
+        </ul>
+    </div>
+
+    <!-- ================= BOOKMARK ================= -->
+    <div class="section">
+        <h2>4. Hyperlink Bookmark</h2>
+        <p>
+            <a href="#berita1">Ke Berita 1</a> |
+            <a href="#berita2">Ke Berita 2</a> |
+            <a href="#berita3">Ke Berita 3</a>
+        </p>
+    </div>
+
+    <!-- ================= ISI BERITA (PANJANG BIAR SCROLL) ================= -->
+    <div class="section berita">
+        <h2 id="berita1">Berita 1: Perkembangan Teknologi</h2>
+        <p>
+            Perkembangan teknologi digital semakin pesat di berbagai bidang kehidupan.
+            Inovasi di sektor pendidikan, kesehatan, dan industri mendorong peningkatan
+            efisiensi serta produktivitas masyarakat. Transformasi digital membuat banyak
+            aktivitas menjadi lebih cepat dan mudah dilakukan.
+        </p>
+        <p>
+            Platform pembelajaran daring semakin berkembang dan membantu mahasiswa
+            mengakses materi kapan saja dan di mana saja. Dunia industri juga memanfaatkan
+            otomatisasi dan kecerdasan buatan untuk meningkatkan kualitas layanan.
+        </p>
+
+        <h2 id="berita2">Berita 2: Transportasi Ramah Lingkungan</h2>
+        <p>
+            Transportasi ramah lingkungan menjadi perhatian utama di berbagai negara.
+            Penggunaan kendaraan listrik meningkat karena dinilai lebih hemat energi
+            dan mengurangi emisi karbon.
+        </p>
+        <p>
+            Pemerintah dan produsen kendaraan terus mengembangkan teknologi baterai
+            yang lebih efisien serta memperluas infrastruktur pengisian daya.
+        </p>
+
+        <h2 id="berita3">Berita 3: Tren Industri Kreatif</h2>
+        <p>
+            Industri kreatif menunjukkan pertumbuhan yang signifikan melalui konten digital,
+            desain visual, animasi, dan pengembangan gim. Anak muda memanfaatkan teknologi
+            sebagai sarana berkarya sekaligus peluang usaha.
+        </p>
+        <p>
+            Dukungan berbagai pihak membuat ekosistem kreatif semakin berkembang dan
+            membuka banyak lapangan kerja baru.
+        </p>
+
+        <!-- Tambahan paragraf supaya scroll panjang -->
+        <p>
+            Perkembangan ini menunjukkan bahwa kolaborasi antara teknologi dan kreativitas
+            menjadi kunci utama kemajuan di era modern. Masyarakat diharapkan terus
+            meningkatkan literasi digital agar mampu beradaptasi dengan perubahan zaman.
+        </p>
+        <p>
+            Inovasi berkelanjutan akan memberikan dampak positif bagi pertumbuhan ekonomi
+            dan kesejahteraan sosial secara luas.
+        </p>
+    </div>
+
+</body>
+</html>
